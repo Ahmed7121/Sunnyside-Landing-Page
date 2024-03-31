@@ -26,7 +26,7 @@ window.onresize = function () {
             navUlA.forEach((e) => e.removeAttribute("style"));
         }, 500);
     } else {
-        navBar.style.transition = "none";
+        navBar.removeAttribute("style");
     }
 
 }

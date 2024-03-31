@@ -9,11 +9,9 @@ let opened = document.querySelectorAll(".opened ul a");
 if (window.innerWidth < 800) {
     navBar.style.transition = "none";
 }
-
 if (navBar.classList.contains("opened")) {
     opened.forEach((e) => e.style.transition = "0.3s");
 }
-
 window.onresize = function () {
     if (this.innerWidth > 799) {
         navBar.style.transition = "none";
@@ -28,13 +26,11 @@ window.onresize = function () {
     } else {
         navBar.removeAttribute("style");
     }
-
 }
 hamMenu.addEventListener("click", function () {
     navBar.removeAttribute("style");
     navBar.classList.toggle("opened");
 })
-
 document.addEventListener("click", function (e) {
     if (navBar.classList.contains("opened") && e.target !== navUl && e.target !== hamMenu && e.target !== navUlA &&
     e.target !== navUlALi[0] && e.target !== navUlALi[1]&& e.target !== navUlALi[2]&& e.target !== navUlALi[3] &&
@@ -42,4 +38,3 @@ document.addEventListener("click", function (e) {
         navBar.classList.toggle("opened");
     }
 });
-

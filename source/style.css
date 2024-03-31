@@ -84,9 +84,7 @@ nav ul a {
     }
 }
 
-nav ul a:hover::before {
-    width: 100%;
-}
+
 
 nav ul a::before {
     content: "";
@@ -567,6 +565,9 @@ footer .socials {
     }
     nav ul a {
         color: var(--neutral-color-5);
+    }
+    nav ul a:hover::before {
+        width: 100%;
     }
 
     .hero-container {

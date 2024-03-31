@@ -1,4 +1,6 @@
 :root {
+    scroll-behavior: smooth;
+
     /* Primary Colors */
     --primary-color-1: hsl(7, 99%, 70%);
     --primary-color-2: hsl(51, 100%, 49%);
